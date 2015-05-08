@@ -1,0 +1,92 @@
+/**
+ * Style Template: 
+ * Created by RichardL33
+ * Date: 00/00/15
+ */
+
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/utilities";
+@import "normalize";
+@import "breakpoint";
+@import "_partials/_breakpoints.scss";
+@import "_partials/variables.scss";
+@import "_partials/mixins.scss";
+@import "_partials/typography.scss";
+
+$legacy-support-for-ie: false;
+$legacy-support-for-mozilla: false;
+
+* {
+@include box-sizing(border-box);
+
+	// <-- GHOST CSS -->
+	// background: #000 !important;
+	// color: #0f0 !important;
+	// outline: solid #f00 1px !important;
+
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+div,
+section {
+	@extend %clearfix;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	background-color: #64C5C5;
+	color: #FFF;
+	text-align: center;
+	padding: 50px;
+}
+
+body > div > li > section > ul {
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+body > div > li > h3 {
+	font-size: 2em;
+}
+
+body > div > li > h4 {
+	font-size: 2.5em;
+}
+
+body > div > li > section > section {
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+body > div > li > section > section > div:nth-child(3) > blockquote {
+	padding: 10px 0;
+}
+
+body > div > li > section > section > div:nth-child(3) > form {
+	padding-top: 20px;
+}
+
+body > div > li > section > section > div:nth-child(3) > form > blockquote {
+	margin-bottom: 20px;
+}
+
+body > div > li > section > section > div:nth-child(3) > form > select,
+body > div > li > section > section > div:nth-child(3) > form > label {
+	vertical-align: top;
+}
+
+body > div > li > section > section > div:nth-child(3) > blockquote > cite {
+	font-style: italic;
+}

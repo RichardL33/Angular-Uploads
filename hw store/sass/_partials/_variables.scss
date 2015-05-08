@@ -1,0 +1,21 @@
+// _VARIABLES.SCSS
+
+// FONTS
+
+//font-face($name, $font-files, [$eot], [$weight], [$style])
+@include font-face("noto_sansbold", font-files("Notosans/notosans-bold-webfont.woff", "Notosans/notosans-bold-webfont.ttf", "Notosans/notosans-bold-webfont.svg"), "Notosans/notosans-bold-webfont.eot");
+@include font-face("noto_regular", font-files("Notosans/notosans-regular-webfont.woff", "Notosans/notosans-regular-webfont.ttf", "Notosans/notosans-regular-webfont.svg"), "Notosans/notosans-regular-webfont.eot");
+@import url();
+
+// BODY STYLES
+
+
+$h1: '';
+$p: '';
+$main-color: #FFF;
+
+// BUTTONS STYLES
+
+
+
+

@@ -1,0 +1,20 @@
+<div class="reddit-view"
+	ng-controller="redditController as redditCtrl">
+	<ul ng-repeat="(key,value) in redditCtrl.reddit.items" id="reddit_container">
+		<li>
+			<!-- <span>{{key}}: {{value.permalink}}</span> -->
+			<img src="{{value.thumbnail}}" id="reddit_thumb" alt="">
+			<div class="content_wrap">
+				<h2>{{value.title}}</h2>
+				<h4>{{value.score}} votes</h4>
+
+				<a href="{{value.url}}"><button>Visit Link</button></a>
+			
+				<a href="http://www.reddit.com{{value.permalink}}" target="_blank"><button>View on Reddit</button></a>
+			</div>
+ 		</li>
+	</ul>
+</div>
+<footer>
+	<h6>&copy; 2015 Reload. All Rights Reserved</h6>
+</footer>
